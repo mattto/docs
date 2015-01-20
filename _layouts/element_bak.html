@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Organization">
+
+<head>
+{% include head.html %}
+</head>
+
+<body id="polymer-core-elements">
+
+    <main id="content-container">
+        <app-drawer id="sidebar" unresolved>
+            <div layout vertical id="sidebar-content">
+                <div id="logo-container" layout horizontal center>
+                    <a href="/" class="logo"><img src="/images/logos/lockup.svg">
+                    </a>
+                    <!-- <core-icon id="dropdown-toggle" icon="arrow-drop-down"></core-icon> -->
+                </div>
+
+                <!-- <dropdown-panel>
+  <core-item icon="social:school" label="Get Started">
+    <a href="/docs/start/getting-the-code.html"></a>
+  </core-item>
+  <core-item icon="description" label="Guides &amp; Resources">
+    <a href="/docs/polymer/polymer.html" class="paper-button" borderless sink></a>
+  </core-item>
+  <core-item icon="polymer" label="Elements">
+    <a href="/docs/elements/"></a>
+  </core-item>
+  <core-item icon="view-headline" label="Blog">
+    <a href="//blog.polymer-project.org" target="_blank"></a>
+  </core-item>
+</dropdown-panel>
+
+ -->
+
+                <docs-menu unresolved flex coreElements='{"core-a11y-keys":"components/core-a11y-keys/core-a11y-keys.html","core-ajax":"components/core-ajax/core-ajax.html","core-xhr":"components/core-ajax/core-xhr.html","core-animated-pages":"components/core-animated-pages/core-animated-pages.html","core-transition-pages":"components/core-animated-pages/transitions/core-transition-pages.html","core-animation-group":"components/core-animation/core-animation-group.html","core-animation":"components/core-animation/core-animation.html","core-animation-keyframe":"components/core-animation/core-animation.html","core-animation-prop":"components/core-animation/core-animation.html","core-collapse":"components/core-collapse/core-collapse.html","core-drag-drop":"components/core-drag-drop/core-drag-drop.html","core-drawer-panel":"components/core-drawer-panel/core-drawer-panel.html","core-dropdown-base":"components/core-dropdown/core-dropdown-base.html","core-dropdown":"components/core-dropdown/core-dropdown.html","core-dropdown-menu":"components/core-dropdown-menu/core-dropdown-menu.html","core-field":"components/core-field/core-field.html","core-header-panel":"components/core-header-panel/core-header-panel.html","core-icon":"components/core-icon/core-icon.html","core-icon-button":"components/core-icon-button/core-icon-button.html","core-iconset":"components/core-iconset/core-iconset.html","core-iconset-svg":"components/core-iconset-svg/core-iconset-svg.html","core-image":"components/core-image/core-image.html","core-input":"components/core-input/core-input.html","core-item":"components/core-item/core-item.html","core-label":"components/core-label/core-label.html","core-list":"components/core-list/core-list.html","core-localstorage":"components/core-localstorage/core-localstorage.html","core-media-query":"components/core-media-query/core-media-query.html","core-menu":"components/core-menu/core-menu.html","core-submenu":"components/core-menu/core-submenu.html","core-menu-button":"components/core-menu-button/core-menu-button.html","core-meta":"components/core-meta/core-meta.html","core-overlay":"components/core-overlay/core-overlay.html","core-pages":"components/core-pages/core-pages.html","core-range":"components/core-range/core-range.html","core-scaffold":"components/core-scaffold/core-scaffold.html","core-scroll-header-panel":"components/core-scroll-header-panel/core-scroll-header-panel.html","core-scroll-threshold":"components/core-scroll-threshold/core-scroll-threshold.html","core-selection":"components/core-selection/core-selection.html","core-selector":"components/core-selector/core-selector.html","core-shared-lib":"components/core-shared-lib/core-shared-lib.html","core-signals":"components/core-signals/core-signals.html","core-splitter":"components/core-splitter/core-splitter.html","core-style":"components/core-style/core-style.html","core-toolbar":"components/core-toolbar/core-toolbar.html","core-tooltip":"components/core-tooltip/core-tooltip.html","core-transition":"components/core-transition/core-transition.html"}' paperElements='{"paper-button-base":"components/paper-button/paper-button-base.html","paper-button":"components/paper-button/paper-button.html","paper-checkbox":"components/paper-checkbox/paper-checkbox.html","paper-action-dialog":"components/paper-dialog/paper-action-dialog.html","paper-dialog-base":"components/paper-dialog/paper-dialog-base.html","paper-dialog-transition":"components/paper-dialog/paper-dialog-transition.html","paper-dialog":"components/paper-dialog/paper-dialog.html","paper-dropdown-transition":"components/paper-dropdown/paper-dropdown-transition.html","paper-dropdown":"components/paper-dropdown/paper-dropdown.html","paper-dropdown-menu":"components/paper-dropdown-menu/paper-dropdown-menu.html","paper-fab":"components/paper-fab/paper-fab.html","paper-icon-button":"components/paper-icon-button/paper-icon-button.html","paper-autogrow-textarea":"components/paper-input/paper-autogrow-textarea.html","paper-input-decorator":"components/paper-input/paper-input-decorator.html","paper-input":"components/paper-input/paper-input.html","paper-item":"components/paper-item/paper-item.html","paper-menu-button":"components/paper-menu-button/paper-menu-button.html","paper-progress":"components/paper-progress/paper-progress.html","paper-radio-button":"components/paper-radio-button/paper-radio-button.html","paper-radio-group":"components/paper-radio-group/paper-radio-group.html","paper-ripple":"components/paper-ripple/paper-ripple.html","paper-shadow":"components/paper-shadow/paper-shadow.html","paper-slider":"components/paper-slider/paper-slider.html","paper-spinner":"components/paper-spinner/paper-spinner.html","paper-tab":"components/paper-tabs/paper-tab.html","paper-tabs":"components/paper-tabs/paper-tabs.html","paper-toast":"components/paper-toast/paper-toast.html","paper-toggle-button":"components/paper-toggle-button/paper-toggle-button.html"}'></docs-menu>
+            </div>
+        </app-drawer>
+
+        <scroll-area sidebar unresolved>
+            <site-banner type="elements" shortname="Elements" unresolved>
+
+
+                <app-bar theme="light" badge="Dev preview" class="bar fixed" unresolved>
+                    <a href="/docs/start/getting-the-code.html" class="paper-button" borderless sink>Get Started</a>
+                    <a href="/docs/polymer/polymer.html" class="paper-button" borderless sink>Guides &amp; Resources</a>
+                    <a href="/docs/elements/" class="paper-button" borderless sink>Elements</a>
+                    <a href="//blog.polymer-project.org" target="_blank" class="paper-button" borderless sink>Blog</a>
+                </app-bar>
+
+                <header>
+                    <h1>Polymer core elements</h1>
+
+                    <summary>Elements</summary>
+
+                </header>
+            </site-banner>
+
+
+
+
+            <article class="">
+                <span class="edit-on-github">
+  <a href="https://github.com/Polymer/docs/edit/master/docs/elements/core-elements.md">Edit on Github</a>
+</span>
+                <div>
+                    <!-- intentionally blank -->
+                </div>
+
+                <header class="onlyonmobile">
+                    <h1>Polymer core elements</h1>
+
+                    <summary>Elements</summary>
+
+                </header>
+
+                <!-- page specific stylesheet needs to be inline to the page so ajax injects it. -->
+                <link rel="stylesheet" href="/css/elementpage.css" />
+
+                <div class="hide-on-hash">
+                    <!-- <p class="alert alert-info"><strong>Note:</strong> These elements and their documentation are still early. The “source” links below point to commented code where you can learn more about how to use the element.</p> -->
+                    <p>Polymer Core elements are a set of utility elements including general-purpose UI elements (such as icons, layout elements, and toolbars), as well as non-UI elements providing features like AJAX, signaling and storage.</p>
+
+                    <component-download-button org="Polymer" component="core-elements" label="GET THE POLYMER CORE ELEMENTS">
+                    </component-download-button>
+
+                    <h2>Related Guides</h2>
+                    <p><a href="layout-elements.html">Application layout elements</a>.</p>
+                    <p><a href="icons.html">Using core icons</a>
+                    </p>
+
+                    <h2>Demos</h2>
+                    <p><a href="/components/core-elements/demo.html">Polymer Core elements sampler</a>
+                    </p>
+                </div>
+
+                <component-docs elements="{&quot;core-a11y-keys&quot;:&quot;components/core-a11y-keys/core-a11y-keys.html&quot;,&quot;core-ajax&quot;:&quot;components/core-ajax/core-ajax.html&quot;,&quot;core-xhr&quot;:&quot;components/core-ajax/core-xhr.html&quot;,&quot;core-animated-pages&quot;:&quot;components/core-animated-pages/core-animated-pages.html&quot;,&quot;core-transition-pages&quot;:&quot;components/core-animated-pages/transitions/core-transition-pages.html&quot;,&quot;core-animation-group&quot;:&quot;components/core-animation/core-animation-group.html&quot;,&quot;core-animation&quot;:&quot;components/core-animation/core-animation.html&quot;,&quot;core-animation-keyframe&quot;:&quot;components/core-animation/core-animation.html&quot;,&quot;core-animation-prop&quot;:&quot;components/core-animation/core-animation.html&quot;,&quot;core-collapse&quot;:&quot;components/core-collapse/core-collapse.html&quot;,&quot;core-drag-drop&quot;:&quot;components/core-drag-drop/core-drag-drop.html&quot;,&quot;core-drawer-panel&quot;:&quot;components/core-drawer-panel/core-drawer-panel.html&quot;,&quot;core-dropdown-base&quot;:&quot;components/core-dropdown/core-dropdown-base.html&quot;,&quot;core-dropdown&quot;:&quot;components/core-dropdown/core-dropdown.html&quot;,&quot;core-dropdown-menu&quot;:&quot;components/core-dropdown-menu/core-dropdown-menu.html&quot;,&quot;core-field&quot;:&quot;components/core-field/core-field.html&quot;,&quot;core-header-panel&quot;:&quot;components/core-header-panel/core-header-panel.html&quot;,&quot;core-icon&quot;:&quot;components/core-icon/core-icon.html&quot;,&quot;core-icon-button&quot;:&quot;components/core-icon-button/core-icon-button.html&quot;,&quot;core-iconset&quot;:&quot;components/core-iconset/core-iconset.html&quot;,&quot;core-iconset-svg&quot;:&quot;components/core-iconset-svg/core-iconset-svg.html&quot;,&quot;core-image&quot;:&quot;components/core-image/core-image.html&quot;,&quot;core-input&quot;:&quot;components/core-input/core-input.html&quot;,&quot;core-item&quot;:&quot;components/core-item/core-item.html&quot;,&quot;core-label&quot;:&quot;components/core-label/core-label.html&quot;,&quot;core-list&quot;:&quot;components/core-list/core-list.html&quot;,&quot;core-localstorage&quot;:&quot;components/core-localstorage/core-localstorage.html&quot;,&quot;core-media-query&quot;:&quot;components/core-media-query/core-media-query.html&quot;,&quot;core-menu&quot;:&quot;components/core-menu/core-menu.html&quot;,&quot;core-submenu&quot;:&quot;components/core-menu/core-submenu.html&quot;,&quot;core-menu-button&quot;:&quot;components/core-menu-button/core-menu-button.html&quot;,&quot;core-meta&quot;:&quot;components/core-meta/core-meta.html&quot;,&quot;core-overlay&quot;:&quot;components/core-overlay/core-overlay.html&quot;,&quot;core-pages&quot;:&quot;components/core-pages/core-pages.html&quot;,&quot;core-range&quot;:&quot;components/core-range/core-range.html&quot;,&quot;core-scaffold&quot;:&quot;components/core-scaffold/core-scaffold.html&quot;,&quot;core-scroll-header-panel&quot;:&quot;components/core-scroll-header-panel/core-scroll-header-panel.html&quot;,&quot;core-scroll-threshold&quot;:&quot;components/core-scroll-threshold/core-scroll-threshold.html&quot;,&quot;core-selection&quot;:&quot;components/core-selection/core-selection.html&quot;,&quot;core-selector&quot;:&quot;components/core-selector/core-selector.html&quot;,&quot;core-shared-lib&quot;:&quot;components/core-shared-lib/core-shared-lib.html&quot;,&quot;core-signals&quot;:&quot;components/core-signals/core-signals.html&quot;,&quot;core-splitter&quot;:&quot;components/core-splitter/core-splitter.html&quot;,&quot;core-style&quot;:&quot;components/core-style/core-style.html&quot;,&quot;core-toolbar&quot;:&quot;components/core-toolbar/core-toolbar.html&quot;,&quot;core-tooltip&quot;:&quot;components/core-tooltip/core-tooltip.html&quot;,&quot;core-transition&quot;:&quot;components/core-transition/core-transition.html&quot;}">
+                </component-docs>
+
+            </article>
+
+            <footer>
+                <div>
+                    <div class="links">
+                        <a href="/docs/start/getting-the-code.html">
+                            <paper-button raised>
+                                <core-icon icon="archive"></core-icon>Get Polymer</paper-button>
+                        </a>
+                        <a href="http://plus.google.com/107187849809354688692/">
+                            <paper-button>
+                                <core-icon icon="social:post-gplus"></core-icon>+Polymer</paper-button>
+                        </a>
+                        <a href="https://twitter.com/intent/follow?screen_name=polymer" data-twitter-follow title="Follow @polymer on Twitter">
+                            <paper-button>
+                                <core-icon icon="social:post-twitter"></core-icon>@polymer</paper-button>
+                        </a>
+                        <a href="https://github.com/polymer">
+                            <paper-button class="github">
+                                <core-icon icon="social:post-github"></core-icon>/Polymer</paper-button>
+                        </a>
+                        <a href="https://github.com/Polymer/polymer/issues/new">
+                            <paper-button>
+                                <core-icon icon="bug-report"></core-icon>File a bug</paper-button>
+                        </a>
+                    </div>
+                    <p id="copyright">&copy; 2014 Polymer Authors. Code licensed under the <a href="http://polymer.github.io/LICENSE.txt" target="_blank">BSD License</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
+                </div>
+            </footer>
+
+
+
+
+            <script>
+            var POLYMER_VERSION = '0.5.1';
+            </script>
+
+            <script src="/js/prettify/prettify.js"></script>
+
+            <!-- <script src="/js/bower_components/smoothscroll/smoothscroll.js"></script> -->
+            <script src="/js/app.js?20141211"></script>
+
+
+        </scroll-area>
+
+    </main>
+
+</body>
+
+</html>

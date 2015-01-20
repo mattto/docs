@@ -10,6 +10,7 @@
     "grunt-contrib-yuidoc": "*",
     "grunt-jekyll": "*",
     "grunt-vulcanize": "*",
+    "grunt-context-parser": "*",
     "load-grunt-tasks": "^0.6.0"
   },
   "scripts": {

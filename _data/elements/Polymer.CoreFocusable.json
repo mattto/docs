@@ -1,0 +1,40 @@
+{
+  "name": "Polymer.CoreFocusable",
+  "description": "\n\n`Polymer.CoreFocusable` is a mixin for elements that the user can interact with.\nElements using this mixin will receive attributes reflecting the focus, pressed\nand disabled states.\n\n",
+  "status": "unstable",
+  "attributes": [
+    {
+      "name": "active",
+      "description": "\nIf true, the element is currently active either because the\nuser is touching it, or the button is a toggle\nand is currently in the active state.\n\n",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "focused",
+      "description": "\nIf true, the element currently has focus due to keyboard\nnavigation.\n\n",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "pressed",
+      "description": "\nIf true, the user is currently holding down the button.\n\n",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "disabled",
+      "description": "\nIf true, the user cannot interact with this element.\n\n",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "toggle",
+      "description": "\nIf true, the button toggles the active state with each tap.\nOtherwise, the button becomes active when the user is holding\nit down.\n\n",
+      "type": "boolean",
+      "default": "false"
+    }
+  ],
+  "parentMethods": [],
+  "parentAttributes": [],
+  "parentEvents": []
+}
