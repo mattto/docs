@@ -8,5 +8,13 @@ published: false
 
 {% assign element = site.data.elements[page.element] %}
 
-<h1>Hello from {{element.name}}</h1>
-<div>{{element.description}}</div>
+<doc-page></doc-page>
+
+<script>
+  (function() {
+    var elementDoc = {{element | jsonify}};
+    document.addEventListener('polymer-ready', function() {
+      document.querySelector('doc-page').data = elementDoc;
+    });
+  })();
+</script>
