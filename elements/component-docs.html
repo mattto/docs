@@ -136,91 +136,19 @@
       </template>
 
       <template if="{{data.attributes.length}}">
-        <section class="box attribute-box">
-          <h3 data-anchor-id="{{data.name}}.attributes">Attributes</h3>
-          <template repeat="{{attribute in data.attributes}}">
-            <div class="details" horizontal layout>
-              <div class="details-name" flex>
-                <p><code data-anchor-id="{{data.name}}.attributes.{{attribute.name}}">{{attribute.name}}</code></p>
-              </div>
-              <div class="details-info" flex three>
-                <p layout horizontal center justified>
-                  <code>&lt;<em>{{attribute.type}}</em>&gt;</code><span class="default" hidden?="{{!attribute.default}}">default: <code>{{attribute.default}}</code></span>
-                </p>
-                <marked-element text="{{attribute.description}}"></marked-element>
-              </div>
-            </div>
-          </template>
-        </section>
+        <doc-section type="attributes" data="[[data]]"></doc-section>
       </template>
 
       <template if="{{data.properties.length}}">
-        <section class="box property-box">
-          <h3 data-anchor-id="{{data.name}}.properties">Properties</h3>
-          <template repeat="{{property in data.properties}}">
-            <div class="details" horizontal layout>
-              <div class="details-name" flex>
-                <p><code data-anchor-id="{{data.name}}.properties.{{property.name}}">{{property.name}}</code></p>
-              </div>
-              <div class="details-info" flex three>
-                <p layout horizontal center justified>
-                  <code>&lt;<em>{{property.type}}</em>&gt;</code><span class="default" hidden?="{{!property.default}}">default: <code>{{property.default}}</code></span>
-                </p>
-                <marked-element text="{{property.description}}"></marked-element>
-              </div>
-            </div>
-          </template>
-        </section>
+        <doc-section type="properties" data="[[data]]"></doc-section>
       </template>
 
       <template if="{{data.events.length}}">
-        <section class="box event-box">
-          <h3 data-anchor-id="{{data.name}}.events">Events</h3>
-          <template repeat="{{event in data.events}}">
-            <div class="details" horizontal layout>
-              <div class="details-name" flex>
-                <p><code data-anchor-id="{{data.name}}.events.{{event.name}}">{{event.name}}</code></p>
-              </div>
-              <div class="details-info" flex three>
-                <marked-element text="{{event.description}}"></marked-element>
-                <template if="{{event.params.length}}">
-                  <div class="params">
-                    <p>Event details:</p>
-                    <template repeat="{{param in event.params}}">
-                      <p><code>&lt;<em>{{param.type}}</em>&gt; {{param.name}}</code></p>
-                      <p><span>{{param.description}}</span></p>
-                    </template>
-                  </div>
-                </template>
-              </div>
-            </div>
-          </template>
-        </section>
+        <doc-section type="events" data="[[data]]"></doc-section>
       </template>
 
       <template if="{{data.methods.length}}">
-        <section class="box method-box">
-          <h3 data-anchor-id="{{data.name}}.methods">Methods</h3>
-          <template repeat="{{method in data.methods}}">
-            <div class="details" horizontal layout>
-              <div class="details-name" flex>
-                <p><code data-anchor-id="{{data.name}}.methods.{{method.name}}">{{method.name}}</code></p>
-              </div>
-              <div class="details-info" flex three>
-                <marked-element text="{{method.description}}"></marked-element>
-                <template if="{{method.params.length}}">
-                  <div class="params">
-                    <p>Method parameters:</p>
-                    <template repeat="{{param in method.params}}">
-                      <p><code>&lt;<em>{{param.type}}</em>&gt; {{param.name}}</code></p>
-                      <p><span>{{param.description}}</span></p>
-                    </template>
-                  </div>
-                </template>
-              </div>
-            </div>
-          </template>
-        </section>
+        <doc-section type="methods" data="[[data]]"></doc-section>
       </template>
 
     </div>
@@ -276,5 +204,51 @@
     });
 
   })();
+  </script>
+</polymer-element>
+
+<polymer-element name="doc-section" attributes="data type">
+  <template>
+    <section class="box attribute-box">
+      <h3 data-anchor-id="{{data.name}}.{{type}}">{{type | capitalize}}</h3>
+      <template repeat="{{entry in data[type]}}">
+        <div class="details" horizontal layout>
+          <div class="details-name" flex>
+            <p><code data-anchor-id="{{data.name}}.{{type}}.{{entry.name}}">{{entry.name}}</code>
+            </p>
+          </div>
+          <div class="details-info" flex three>
+            <marked-element text="{{entry.description}}"></marked-element>
+            <template if="{{entry.type}}">
+              <p layout horizontal center justified>
+                <code>&lt;<em>{{entry.type}}</em>&gt;</code><span class="default" hidden?="{{!entry.default}}">default: <code>{{entry.default}}</code></span>
+              </p>
+            </template>
+            <template if="{{data[type].params.length}}">
+              <div class="params">
+                <p>{{type | singularize | capitalize}} details:</p>
+                <template repeat="{{param in event.params}}">
+                  <p><code>&lt;<em>{{param.type}}</em>&gt; {{param.name}}</code>
+                  </p>
+                  <p><span>{{param.description}}</span>
+                  </p>
+                </template>
+              </div>
+            </template>
+          </div>
+        </div>
+      </template>
+    </section>
+  </template>
+  <script>
+  Polymer('doc-section', {
+    entries: [],
+    capitalize: function(str) {
+      return str.charAt(0).toUpperCase() + str.slice(1);;
+    },
+    singularize: function(str) {
+      return str.slice(str.length - 1);
+    }
+  });
   </script>
 </polymer-element>
