@@ -8,6 +8,7 @@
     subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 <link rel="import" href="../components/polymer/polymer.html">
+<link rel="import" href="../components/core-collapse/core-collapse.html">
 <link rel="import" href="../components/marked-element/marked-element.html">
 
 <polymer-element name="doc-section" attributes="data type">
@@ -51,7 +52,7 @@
       return str.charAt(0).toUpperCase() + str.slice(1);;
     },
     singularize: function(str) {
-      return str.slice(str.length - 1);
+      return str.slice(0, str.length - 1);
     }
   });
   </script>
