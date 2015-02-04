@@ -73,19 +73,19 @@
         </section>
       </template>
 
-      <template if="{{data.attributes.length}}">
+      <template if="{{data.attributes.length || data.inherited.attributes.length}}">
         <doc-section type="attributes" data="[[data]]"></doc-section>
       </template>
 
-      <template if="{{data.properties.length}}">
+      <template if="{{data.properties.length || data.inherited.properties.length}}">
         <doc-section type="properties" data="[[data]]"></doc-section>
       </template>
 
-      <template if="{{data.events.length}}">
+      <template if="{{data.events.length || data.inherited.events.length}}">
         <doc-section type="events" data="[[data]]"></doc-section>
       </template>
 
-      <template if="{{data.methods.length}}">
+      <template if="{{data.methods.length || data.inherited.methods.length}}">
         <doc-section type="methods" data="[[data]]"></doc-section>
       </template>
 

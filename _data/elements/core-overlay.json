@@ -130,56 +130,74 @@
       "description": "\nExtensions of core-overlay should implement the `resizeHandler`\nmethod to adjust the size and position of the overlay when the \nbrowser window resizes.\n"
     }
   ],
-  "parentMethods": [
-    {
-      "name": "CoreResizable",
-      "methods": [
-        {
-          "name": "resizableAttachedHandler",
-          "description": "\nUser must call from `attached` callback\n\n"
-        },
-        {
-          "name": "resizableDetachedHandler",
-          "description": "\nUser must call from `detached` callback\n\n"
-        }
-      ]
-    },
-    {
-      "name": "CoreResizer",
-      "methods": [
-        {
-          "name": "resizerAttachedHandler",
-          "description": "\nUser must call from `attached` callback\n\n"
-        },
-        {
-          "name": "resizerDetachedHandler",
-          "description": "\nUser must call from `detached` callback\n\n"
-        },
-        {
-          "name": "notifyResize",
-          "description": "\nUser should call when resizing or un-hiding children\n\n"
-        },
-        {
-          "name": "resizeerShouldNotify",
-          "description": "\nUser should implement to introduce filtering when notifying children.\nGenerally, children that are hidden by the CoreResizer (e.g. non-active\npages) need not be notified during resize, since they will be notified\nagain when becoming un-hidden.\n\nReturn `true` if CoreResizable passed as argument should be notified of\nresize.\n\n"
-        }
-      ]
-    }
-  ],
-  "parentAttributes": [
-    {
-      "name": "CoreResizable"
-    },
-    {
-      "name": "CoreResizer"
-    }
-  ],
-  "parentEvents": [
-    {
-      "name": "CoreResizable"
-    },
-    {
-      "name": "CoreResizer"
-    }
-  ]
+  "inherited": {
+    "methods": [
+      {
+        "name": "CoreResizable",
+        "methods": [
+          {
+            "name": "resizableAttachedHandler",
+            "description": "\nUser must call from `attached` callback\n\n"
+          },
+          {
+            "name": "resizableDetachedHandler",
+            "description": "\nUser must call from `detached` callback\n\n"
+          }
+        ]
+      },
+      {
+        "name": "CoreResizer",
+        "methods": [
+          {
+            "name": "resizerAttachedHandler",
+            "description": "\nUser must call from `attached` callback\n\n"
+          },
+          {
+            "name": "resizerDetachedHandler",
+            "description": "\nUser must call from `detached` callback\n\n"
+          },
+          {
+            "name": "notifyResize",
+            "description": "\nUser should call when resizing or un-hiding children\n\n"
+          },
+          {
+            "name": "resizeerShouldNotify",
+            "description": "\nUser should implement to introduce filtering when notifying children.\nGenerally, children that are hidden by the CoreResizer (e.g. non-active\npages) need not be notified during resize, since they will be notified\nagain when becoming un-hidden.\n\nReturn `true` if CoreResizable passed as argument should be notified of\nresize.\n\n"
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "CoreResizable"
+      },
+      {
+        "name": "CoreResizer"
+      }
+    ],
+    "events": [
+      {
+        "name": "CoreResizable"
+      },
+      {
+        "name": "CoreResizer"
+      }
+    ],
+    "properties": [
+      {
+        "name": "CoreResizable"
+      },
+      {
+        "name": "CoreResizer",
+        "properties": [
+          {
+            "name": "resizerIsPeer",
+            "description": "\nSet to `true` if the resizer is actually a peer to the elements it\nresizes (e.g. splitter); in this case it will listen for resize requests\nevents from its peers on its parent.\n\n",
+            "type": "Boolean",
+            "default": "false"
+          }
+        ]
+      }
+    ]
+  }
 }

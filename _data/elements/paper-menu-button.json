@@ -8,27 +8,34 @@
     }
   ],
   "status": "unstable",
-  "parentMethods": [
-    {
-      "name": "core-dropdown-base"
-    }
-  ],
-  "parentAttributes": [
-    {
-      "name": "core-dropdown-base",
-      "methods": [
-        {
-          "name": "opened",
-          "description": "\nTrue if the menu is open.\n\n",
-          "type": "boolean",
-          "default": "false"
-        }
-      ]
-    }
-  ],
-  "parentEvents": [
-    {
-      "name": "core-dropdown-base"
-    }
-  ]
+  "inherited": {
+    "methods": [
+      {
+        "name": "core-dropdown-base"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "core-dropdown-base",
+        "attributes": [
+          {
+            "name": "opened",
+            "description": "\nTrue if the menu is open.\n\n",
+            "type": "boolean",
+            "default": "false"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "name": "core-dropdown-base"
+      }
+    ],
+    "properties": [
+      {
+        "name": "core-dropdown-base"
+      }
+    ]
+  }
 }

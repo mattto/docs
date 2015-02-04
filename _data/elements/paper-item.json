@@ -28,19 +28,26 @@
       "default": "true"
     }
   ],
-  "parentMethods": [
-    {
-      "name": "paper-button-base"
-    }
-  ],
-  "parentAttributes": [
-    {
-      "name": "paper-button-base"
-    }
-  ],
-  "parentEvents": [
-    {
-      "name": "paper-button-base"
-    }
-  ]
+  "inherited": {
+    "methods": [
+      {
+        "name": "paper-button-base"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "paper-button-base"
+      }
+    ],
+    "events": [
+      {
+        "name": "paper-button-base"
+      }
+    ],
+    "properties": [
+      {
+        "name": "paper-button-base"
+      }
+    ]
+  }
 }

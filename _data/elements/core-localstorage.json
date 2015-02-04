@@ -42,7 +42,10 @@
       "description": " \nSaves the value to localStorage.\n\n"
     }
   ],
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

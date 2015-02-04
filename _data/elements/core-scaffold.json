@@ -61,7 +61,10 @@
       "type": "Object"
     }
   ],
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

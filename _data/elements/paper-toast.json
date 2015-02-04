@@ -75,7 +75,10 @@
       "description": " \nDismiss the toast and hide it.\n"
     }
   ],
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

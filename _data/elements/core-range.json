@@ -34,7 +34,10 @@
       "default": "0"
     }
   ],
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

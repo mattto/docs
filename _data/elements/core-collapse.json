@@ -55,7 +55,10 @@
       "description": "\nToggle the opened state.\n\n"
     }
   ],
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

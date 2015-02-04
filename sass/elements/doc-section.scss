@@ -13,6 +13,7 @@
 
 :host {
   display: block;
+  position: relative;
   margin-bottom: 40px;
 
   .details {
@@ -46,6 +47,9 @@
     @extend .material-orange-light;
     border-bottom: 1px solid rgba(255, 86, 33, 0.5);
   }
+  .details-collapsed {
+    background: #FBE9E7;
+  }
   h3 {
     @extend .material-orange;
   }
@@ -55,6 +59,9 @@
   .details {
     @extend .material-yellow-light;
     border-bottom: 1px solid rgba(243, 179, 0, 0.5);
+  }
+  .details-collapsed {
+    background: #FFF8E1;
   }
   h3 {
     @extend .material-yellow;
@@ -66,6 +73,9 @@
     @extend .material-green-light;
     border-bottom: 1px solid rgba(0, 190, 164, 0.5);
   }
+  .details-collapsed {
+    background: #E0F2F1;
+  }
   h3 {
     @extend .material-green;
   }
@@ -76,7 +86,26 @@
     @extend .material-blue-light;
     border-bottom: 1px solid rgba(65, 132, 243, 0.5);
   }
+  .details-collapsed {
+    background: #E3F2FD;
+  }
   h3 {
     @extend .material-blue;
   }
+}
+
+.inherit-toggle {
+  position: absolute;
+  top: 30px;
+  right: 12px;
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.inherit-toggle:hover,
+.inherit-toggle:focus {
+  border-bottom: 1px solid white;
 }

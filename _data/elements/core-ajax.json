@@ -115,7 +115,10 @@
       "description": "\nAborts the current active request if there is one and resets internal\nstate appropriately.\n\n"
     }
   ],
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

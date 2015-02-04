@@ -21,7 +21,10 @@
       "description": "\nSet the z-depth of the shadow. This should be used after element\ncreation instead of setting the z property directly.\n\n"
     }
   ],
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

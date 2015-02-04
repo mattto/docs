@@ -18,55 +18,62 @@
       "description": "\nFired when the checked state changes.\n\n"
     }
   ],
-  "parentMethods": [
-    {
-      "name": "paper-radio-button"
-    }
-  ],
-  "parentAttributes": [
-    {
-      "name": "paper-radio-button",
-      "methods": [
-        {
-          "name": "checked",
-          "description": "\nGets or sets the state, `true` is checked and `false` is unchecked.\n\n",
-          "type": "boolean",
-          "default": "false"
-        },
-        {
-          "name": "label",
-          "description": "\nThe label for the radio button.\n\n",
-          "type": "string",
-          "default": "''"
-        },
-        {
-          "name": "toggles",
-          "description": "\nNormally the user cannot uncheck the radio button by tapping once\nchecked.  Setting this property to `true` makes the radio button\ntoggleable from checked to unchecked.\n\n",
-          "type": "boolean",
-          "default": "false"
-        },
-        {
-          "name": "disabled",
-          "description": "\nIf true, the user cannot interact with this element.\n\n",
-          "type": "boolean",
-          "default": "false"
-        }
-      ]
-    }
-  ],
-  "parentEvents": [
-    {
-      "name": "paper-radio-button",
-      "methods": [
-        {
-          "name": "change",
-          "description": "\nFired when the checked state changes due to user interaction.\n\n"
-        },
-        {
-          "name": "core-change",
-          "description": "\nFired when the checked state changes.\n\n"
-        }
-      ]
-    }
-  ]
+  "inherited": {
+    "methods": [
+      {
+        "name": "paper-radio-button"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "paper-radio-button",
+        "attributes": [
+          {
+            "name": "checked",
+            "description": "\nGets or sets the state, `true` is checked and `false` is unchecked.\n\n",
+            "type": "boolean",
+            "default": "false"
+          },
+          {
+            "name": "label",
+            "description": "\nThe label for the radio button.\n\n",
+            "type": "string",
+            "default": "''"
+          },
+          {
+            "name": "toggles",
+            "description": "\nNormally the user cannot uncheck the radio button by tapping once\nchecked.  Setting this property to `true` makes the radio button\ntoggleable from checked to unchecked.\n\n",
+            "type": "boolean",
+            "default": "false"
+          },
+          {
+            "name": "disabled",
+            "description": "\nIf true, the user cannot interact with this element.\n\n",
+            "type": "boolean",
+            "default": "false"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "name": "paper-radio-button",
+        "events": [
+          {
+            "name": "change",
+            "description": "\nFired when the checked state changes due to user interaction.\n\n"
+          },
+          {
+            "name": "core-change",
+            "description": "\nFired when the checked state changes.\n\n"
+          }
+        ]
+      }
+    ],
+    "properties": [
+      {
+        "name": "paper-radio-button"
+      }
+    ]
+  }
 }

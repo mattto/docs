@@ -55,7 +55,10 @@
     }
   ],
   "returns": "{Object} XHR object.",
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

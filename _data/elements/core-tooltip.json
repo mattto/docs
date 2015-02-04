@@ -44,29 +44,36 @@
       "default": "'tip'"
     }
   ],
-  "parentMethods": [
-    {
-      "name": "CoreResizable",
-      "methods": [
-        {
-          "name": "resizableAttachedHandler",
-          "description": "\nUser must call from `attached` callback\n\n"
-        },
-        {
-          "name": "resizableDetachedHandler",
-          "description": "\nUser must call from `detached` callback\n\n"
-        }
-      ]
-    }
-  ],
-  "parentAttributes": [
-    {
-      "name": "CoreResizable"
-    }
-  ],
-  "parentEvents": [
-    {
-      "name": "CoreResizable"
-    }
-  ]
+  "inherited": {
+    "methods": [
+      {
+        "name": "CoreResizable",
+        "methods": [
+          {
+            "name": "resizableAttachedHandler",
+            "description": "\nUser must call from `attached` callback\n\n"
+          },
+          {
+            "name": "resizableDetachedHandler",
+            "description": "\nUser must call from `detached` callback\n\n"
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "CoreResizable"
+      }
+    ],
+    "events": [
+      {
+        "name": "CoreResizable"
+      }
+    ],
+    "properties": [
+      {
+        "name": "CoreResizable"
+      }
+    ]
+  }
 }

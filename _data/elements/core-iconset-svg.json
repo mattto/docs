@@ -51,40 +51,55 @@
     }
   ],
   "return": "{Element} The icon element",
-  "parentMethods": [
-    {
-      "name": "core-meta",
-      "methods": [
-        {
-          "name": "byId",
-          "description": "\nRetrieves meta-data by ID.\n\n",
-          "params": [
-            {
-              "type": "String",
-              "name": "id",
-              "description": "The ID of the meta-data to be returned."
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "parentAttributes": [
-    {
-      "name": "core-meta",
-      "methods": [
-        {
-          "name": "type",
-          "description": "\nThe type of meta-data.  All meta-data with the same type with be\nstored together.\n\n",
-          "type": "string",
-          "default": "'default'"
-        }
-      ]
-    }
-  ],
-  "parentEvents": [
-    {
-      "name": "core-meta"
-    }
-  ]
+  "inherited": {
+    "methods": [
+      {
+        "name": "core-meta",
+        "methods": [
+          {
+            "name": "byId",
+            "description": "\nRetrieves meta-data by ID.\n\n",
+            "params": [
+              {
+                "type": "String",
+                "name": "id",
+                "description": "The ID of the meta-data to be returned."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "core-meta",
+        "attributes": [
+          {
+            "name": "type",
+            "description": "\nThe type of meta-data.  All meta-data with the same type with be\nstored together.\n\n",
+            "type": "string",
+            "default": "'default'"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "name": "core-meta"
+      }
+    ],
+    "properties": [
+      {
+        "name": "core-meta",
+        "properties": [
+          {
+            "name": "list",
+            "description": "\nReturns a list of all meta-data elements with the same type.\n\n",
+            "type": "array",
+            "default": "[]"
+          }
+        ]
+      }
+    ]
+  }
 }

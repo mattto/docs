@@ -56,7 +56,10 @@
     }
   ],
   "return": "{boolean} True if the input is valid.",
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

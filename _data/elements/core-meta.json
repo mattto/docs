@@ -32,7 +32,10 @@
     }
   ],
   "returns": "Returns meta-data.",
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

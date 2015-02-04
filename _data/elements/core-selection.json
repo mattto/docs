@@ -53,7 +53,10 @@
     }
   ],
   "returns": "Returns true if `item` is selected.",
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

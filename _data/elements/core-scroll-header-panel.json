@@ -81,29 +81,36 @@
       "description": "\nInvoke this to tell `core-scroll-header-panel` to re-measure the header's\nheight.\n\n"
     }
   ],
-  "parentMethods": [
-    {
-      "name": "CoreResizable",
-      "methods": [
-        {
-          "name": "resizableAttachedHandler",
-          "description": "\nUser must call from `attached` callback\n\n"
-        },
-        {
-          "name": "resizableDetachedHandler",
-          "description": "\nUser must call from `detached` callback\n\n"
-        }
-      ]
-    }
-  ],
-  "parentAttributes": [
-    {
-      "name": "CoreResizable"
-    }
-  ],
-  "parentEvents": [
-    {
-      "name": "CoreResizable"
-    }
-  ]
+  "inherited": {
+    "methods": [
+      {
+        "name": "CoreResizable",
+        "methods": [
+          {
+            "name": "resizableAttachedHandler",
+            "description": "\nUser must call from `attached` callback\n\n"
+          },
+          {
+            "name": "resizableDetachedHandler",
+            "description": "\nUser must call from `detached` callback\n\n"
+          }
+        ]
+      }
+    ],
+    "attributes": [
+      {
+        "name": "CoreResizable"
+      }
+    ],
+    "events": [
+      {
+        "name": "CoreResizable"
+      }
+    ],
+    "properties": [
+      {
+        "name": "CoreResizable"
+      }
+    ]
+  }
 }

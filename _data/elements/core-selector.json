@@ -149,7 +149,10 @@
     }
   ],
   "returns": "the next item or undefined if there is none",
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

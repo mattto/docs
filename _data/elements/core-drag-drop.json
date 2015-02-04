@@ -2,7 +2,10 @@
   "name": "core-drag-drop",
   "description": "\n",
   "homepage": "github.io",
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

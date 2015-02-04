@@ -28,7 +28,10 @@
       "description": "\nSizes this element to fit the input value. This function is automatically called\nwhen the user types in new input, but you must call this function if the value\nis updated imperatively.\n\n"
     }
   ],
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }

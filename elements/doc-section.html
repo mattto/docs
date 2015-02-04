@@ -15,7 +15,49 @@
   <template>
     <link rel="stylesheet" href="../css/elements/doc-section.css">
     <section class="box attribute-box">
+      
       <h3 data-anchor-id="{{data.name}}.{{type}}">{{type | capitalize}}</h3>
+
+      <template if="{{data.inherited[type].length}}">
+        <button class="inherit-toggle" on-click="{{toggle}}">
+          Show inherited
+        </button>
+      </template>
+
+      <template if="{{data.inherited[type].length}}">
+        <core-collapse id="collapse">
+          <template repeat="{{parent in data.inherited[type]}}">
+            <template repeat="{{entry in parent[type]}}">
+              <div class="details details-collapsed" horizontal layout>
+                <div class="details-name" flex>
+                  <p><code data-anchor-id="{{data.name}}.{{type}}.{{entry.name}}">{{entry.name}}</code>
+                  </p>
+                </div>
+                <div class="details-info" flex three>
+                  <template if="{{entry.type}}">
+                    <p layout horizontal center justified>
+                      <code>&lt;<em>{{entry.type}}</em>&gt;</code><span class="default" hidden?="{{!entry.default}}">default: <code>{{entry.default}}</code></span>
+                    </p>
+                  </template>
+                  <marked-element text="{{entry.description}}"></marked-element>
+                  <template if="{{data[type].params.length}}">
+                    <div class="params">
+                      <p>{{type | singularize | capitalize}} details:</p>
+                      <template repeat="{{param in event.params}}">
+                        <p><code>&lt;<em>{{param.type}}</em>&gt; {{param.name}}</code>
+                        </p>
+                        <p><span>{{param.description}}</span>
+                        </p>
+                      </template>
+                    </div>
+                  </template>
+                </div>
+              </div>
+            </template>
+          </template>
+        </core-collapse>
+      </template>
+      
       <template repeat="{{entry in data[type]}}">
         <div class="details" horizontal layout>
           <div class="details-name" flex>
@@ -53,6 +95,9 @@
     },
     singularize: function(str) {
       return str.slice(0, str.length - 1);
+    },
+    toggle: function() {
+      this.$.collapse.toggle();
     }
   });
   </script>

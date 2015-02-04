@@ -22,51 +22,58 @@
       "default": "false"
     }
   ],
-  "parentMethods": [
-    {
-      "name": "core-range"
-    }
-  ],
-  "parentAttributes": [
-    {
-      "name": "core-range",
-      "methods": [
-        {
-          "name": "value",
-          "description": "\nThe number that represents the current value.\n\n",
-          "type": "number",
-          "default": "0"
-        },
-        {
-          "name": "min",
-          "description": "\nThe number that indicates the minimum value of the range.\n\n",
-          "type": "number",
-          "default": "0"
-        },
-        {
-          "name": "max",
-          "description": "\nThe number that indicates the maximum value of the range.\n\n",
-          "type": "number",
-          "default": "100"
-        },
-        {
-          "name": "step",
-          "description": "\nSpecifies the value granularity of the range's value.\n\n",
-          "type": "number",
-          "default": "1"
-        },
-        {
-          "name": "ratio",
-          "description": "\nReturns the ratio of the value.\n\n",
-          "type": "number",
-          "default": "0"
-        }
-      ]
-    }
-  ],
-  "parentEvents": [
-    {
-      "name": "core-range"
-    }
-  ]
+  "inherited": {
+    "methods": [
+      {
+        "name": "core-range"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "core-range",
+        "attributes": [
+          {
+            "name": "value",
+            "description": "\nThe number that represents the current value.\n\n",
+            "type": "number",
+            "default": "0"
+          },
+          {
+            "name": "min",
+            "description": "\nThe number that indicates the minimum value of the range.\n\n",
+            "type": "number",
+            "default": "0"
+          },
+          {
+            "name": "max",
+            "description": "\nThe number that indicates the maximum value of the range.\n\n",
+            "type": "number",
+            "default": "100"
+          },
+          {
+            "name": "step",
+            "description": "\nSpecifies the value granularity of the range's value.\n\n",
+            "type": "number",
+            "default": "1"
+          },
+          {
+            "name": "ratio",
+            "description": "\nReturns the ratio of the value.\n\n",
+            "type": "number",
+            "default": "0"
+          }
+        ]
+      }
+    ],
+    "events": [
+      {
+        "name": "core-range"
+      }
+    ],
+    "properties": [
+      {
+        "name": "core-range"
+      }
+    ]
+  }
 }

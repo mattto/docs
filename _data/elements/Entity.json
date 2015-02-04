@@ -1,7 +1,10 @@
 {
   "name": "Entity",
   "description": "**Undocumented**",
-  "parentMethods": [],
-  "parentAttributes": [],
-  "parentEvents": []
+  "inherited": {
+    "methods": [],
+    "attributes": [],
+    "events": [],
+    "properties": []
+  }
 }
