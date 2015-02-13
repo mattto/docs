@@ -128,7 +128,6 @@
       "description": "\nCreates a web animations object based on this object's properties, and\nplays it if autoplay is true.\n\n"
     }
   ],
-  "return": "Object A web animation.",
   "inherited": {
     "methods": [],
     "attributes": [],

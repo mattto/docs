@@ -31,7 +31,11 @@
           "name": "icon",
           "description": "The name the icon to apply."
         }
-      ]
+      ],
+      "return": {
+        "type": "Element",
+        "description": "The icon element"
+      }
     },
     {
       "name": "updateIcons",
@@ -50,7 +54,6 @@
       ]
     }
   ],
-  "return": "{Element} The icon element",
   "inherited": {
     "methods": [
       {

@@ -48,14 +48,17 @@
   "methods": [
     {
       "name": "validate",
-      "description": "\nValidate the input using HTML5 Constraints.\n\n"
+      "description": "\nValidate the input using HTML5 Constraints.\n\n",
+      "return": {
+        "type": "boolean",
+        "description": "True if the input is valid."
+      }
     },
     {
       "name": "updateLabelVisibility",
       "description": "\nUpdates the label visibility based on a value. This is handled automatically\nif the user is typing, but if you imperatively set the input value you need\nto call this function.\n\n"
     }
   ],
-  "return": "{boolean} True if the input is valid.",
   "inherited": {
     "methods": [],
     "attributes": [],

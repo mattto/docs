@@ -39,7 +39,7 @@
     {
       "name": "params",
       "description": "\nParameters to send to the specified URL, as JSON.\n\n",
-      "type": "string (JSON)",
+      "type": "string",
       "default": "''"
     },
     {

@@ -131,7 +131,7 @@ module.exports = function(grunt) {
       ]
     },
 
-    context_parser: {
+    doc_merge: {
       default: {
         options: {
           config: 'config.json',
