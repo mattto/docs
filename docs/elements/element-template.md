@@ -13,8 +13,6 @@ published: false
 <script>
   (function() {
     var elementDoc = {{element | jsonify}};
-    document.addEventListener('polymer-ready', function() {
-      document.querySelector('doc-page').data = elementDoc;
-    });
+    document.querySelector('doc-page').data = elementDoc;
   })();
 </script>
