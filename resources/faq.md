@@ -44,7 +44,7 @@ That's fine. The cool thing about Web Components-based libraries like {{site.pro
 
 {{site.project_title}} aims to support [evergreen browsers](http://www.yetihq.com/blog/evergreen-web-browser/). After all, we're trying to simulate the future, and as someone once said, "You're headed for trouble if all you do is stare in the rear-view mirror." In practice, this means we support the most recent versions of Chrome, Safari, Internet Explorer, and Firefox. Chrome 36 is the first browser to ship all of the platform features {{site.project_title}} depends on natively.
 
-Note that this is fewer browsers than other frameworks support. For example, {{site.project_title}} only aims to support Internet Explorer 10 and above. Some pieces of {{site.project_title}} may support more browsers if it doesn't require too much extra effort--if you find bugs in unsupported browsers, please still file them.  Most things should work in IE9 today without too much work; feel free to file bugs on what doesn't.  IE8 is incompatable due to its insufficient DOM support.
+Note that this is fewer browsers than other frameworks support. For example, {{site.project_title}} only aims to support Internet Explorer 10 and above. Some pieces of {{site.project_title}} may support more browsers if it doesn't require too much extra effort--if you find bugs in unsupported browsers, please still file them.  Most things should work in IE9 today without too much work; feel free to file bugs on what doesn't.  IE8 is incompatible due to its insufficient DOM support.
 
 See our [Browser Compatibility](/resources/compatibility.html) page for more information.
 
@@ -164,7 +164,7 @@ We have many different demo, platform, and library repositories. If you know exa
 There is no way to guarantee sharing and deduping in the general case. However, if
 you have a library of components that use a library, they can all import a
 "library.html" file that loads that library. [HTML Imports](/platform/html-imports.html)
-will de-dupe the import based on it's fully qualified path.
+will de-dupe the import based on its fully qualified path.
 
 If multiple libraries want to share a dependency, they will have to agree on a system.
 Feature detection, or an agreed upon common location for a 'jquery.html' file in a CDN, etc.
@@ -480,7 +480,7 @@ this, there are two options:
 
 **Note:** Steve Faulkner had a [nice writeup](http://blog.paciellogroup.com/2012/07/notes-on-web-components-aria/) on this topic a while back and found that it does. See also Marcy Sutton's more recent "[Accessibility and the Shadow DOM](http://substantial.com/blog/2014/02/05/accessibility-and-the-shadow-dom/)".
 
-A common mis-conception is that the Shadow DOM doesn't play nicely with assistive technologies. The reality is that the Shadow DOM can in fact be traversed and any node with Shadow DOM has a `shadowRoot` property which points to it's shadow document. Most assistive technologies hook directly into the browsers rendering tree, so they just see the fully composed tree.
+A common mis-conception is that the Shadow DOM doesn't play nicely with assistive technologies. The reality is that the Shadow DOM can in fact be traversed and any node with Shadow DOM has a `shadowRoot` property which points to its shadow document. Most assistive technologies hook directly into the browsers rendering tree, so they just see the fully composed tree.
 
 In fact, if you inspect one of the native HTML elements that use Shadow DOM, `<input type="date">` for example, you'll notice aria attributes inside the tree:
 
